@@ -1,0 +1,16 @@
+#banner {
+    text-align: center;
+    background-color: lavender;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#forecast {
+    margin-top: 25px;
+}
+
+#UVColumn {
+    margin-left: -15px;
+}
+
+
