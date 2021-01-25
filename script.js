@@ -131,7 +131,7 @@ $(document).ready(function(){
 
     function displayForecast(response) {
         //day1
-        varTempF1 = Math.round((response.list[0].main.temp -273.15) * 1.8 +32);
+        var TempF1 = Math.round((response.list[0].main.temp -273.15) * 1.8 +32);
         var newDate1 = moment().add(1,'days').format("MMMM Do");
 
         var iconcode1 =response.list[0].weather[0].icon;
@@ -140,10 +140,10 @@ $(document).ready(function(){
 
         $("#date-1").text('Date: ' +newDate1);
         $("#icon-1").text();
-        $("#temp-1").text('Temp: ' + varTempF1);
+        $("#temp-1").text('Temp: ' + TempF1);
         $("#humidity-1").text('Humidity: ' + response.list[0].main.humidity);
         //day2
-        varTempF2 = Math.round((response.list[1].main.temp -273.15) * 1.8 +32);
+        var TempF2 = Math.round((response.list[1].main.temp -273.15) * 1.8 +32);
         var newDate2 = moment().add(2,'days').format("MMMM Do");
 
         var iconcode2 =response.list[1].weather[0].icon;
@@ -152,10 +152,10 @@ $(document).ready(function(){
 
         $("#date-2").text('Date: ' +newDate2);
         $("#icon-2").text();
-        $("#temp-2").text('Temp: ' + varTempF2);
+        $("#temp-2").text('Temp: ' + TempF2);
         $("#humidity-2").text('Humidity: ' + response.list[1].main.humidity);
         //day3
-        varTempF3 = Math.round((response.list[2].main.temp -273.15) * 1.8 +32);
+        var TempF3 = Math.round((response.list[2].main.temp -273.15) * 1.8 +32);
         var newDate3 = moment().add(3,'days').format("MMMM Do");
 
         var iconcode3 =response.list[2].weather[0].icon;
@@ -164,10 +164,10 @@ $(document).ready(function(){
 
         $("#date-3").text('Date: ' +newDate3);
         $("#icon-3").text();
-        $("#temp-3").text('Temp: ' + varTempF3);
+        $("#temp-3").text('Temp: ' + TempF3);
         $("#humidity-3").text('Humidity: ' + response.list[2].main.humidity);
         //day4
-        varTempF4 = Math.round((response.list[3].main.temp -273.15) * 1.8 +32);
+        var TempF4 = Math.round((response.list[3].main.temp -273.15) * 1.8 +32);
         var newDate4 = moment().add(4,'days').format("MMMM Do");
 
         var iconcode4 =response.list[3].weather[0].icon;
@@ -176,10 +176,10 @@ $(document).ready(function(){
 
         $("#date-4").text('Date: ' +newDate4);
         $("#icon-4").text();
-        $("#temp-4").text('Temp: ' + varTempF4);
+        $("#temp-4").text('Temp: ' + TempF4);
         $("#humidity-4").text('Humidity: ' + response.list[3].main.humidity);
         //day5
-        varTempF5 = Math.round((response.list[4].main.temp -273.15) * 1.8 +32);
+        var TempF5 = Math.round((response.list[4].main.temp -273.15) * 1.8 +32);
         var newDate5 = moment().add(5,'days').format("MMMM Do");
 
         var iconcode5 =response.list[4].weather[0].icon;
@@ -188,7 +188,7 @@ $(document).ready(function(){
 
         $("#date-5").text('Date: ' +newDate5);
         $("#icon-5").text();
-        $("#temp-5").text('Temp: ' + varTempF5);
+        $("#temp-5").text('Temp: ' + TempF5);
         $("#humidity-5").text('Humidity: ' + response.list[4].main.humidity);
 
     }
